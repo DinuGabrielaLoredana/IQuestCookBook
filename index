@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Cook Book</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="header-color">
+            <i class="fa fa-cutlery"></i>
+            <strong> iQuest Cook Book</strong>
+        </h1>
+
+        <nav>
+            <table class="full">
+                <tr class="full">
+                    <td class="nav-item">
+                        <div>
+                            <i class="fa fa-plus"></i>
+                            <strong> New recipe</strong>
+                        </div>
+                    </td>
+                    <td class="nav-item">
+                        <select name="text">
+                            <option value="value1">Scambled egg omlette</option>
+                            <option value="value2" selected>Select a recipe...</option>
+
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <h3 class="other-red-ish">
+                <i class="fa fa-info"></i> About
+            </h3>
+
+            <form>
+
+                <div>
+                    <label for="title">Recipe title</label>
+                    <input type="text" name="title" id="title" placeholder="Title">
+                </div>
+                <div>
+                    <label for="message-box"> Description</label>
+                    <textarea name="message" id="message-box" rows="10" cols="30" placeholder="About the recipe"></textarea>
+                </div>
+
+				
+			
+                <section class="flex_container">
+
+                    <div class="object" id=o1">
+                        <label for="portions"> Portions</label>
+                    </div>
+                    <div class="object"id="o2">
+                        <label for="time"> Time(mins)</label>
+                    </div>
+                    <div class="object"id="o3">
+                        <label for="dificulty"> Dificulty</label>
+                    </div>
+
+                    <div class="object"id="o4">
+                        <input type="number" name="portions" id="portions" min="1" max="5" step="1" value="5">
+                    </div>
+                    <div class="object"id="o5">
+                        <input type="number" name="time" id="time" min="5" max="120" step="5" value="5">
+                    </div>
+                    <div class="object"id="o6">
+                        <input type="number" name="dificulty" id="dificulty" min="1" max="5" step="1" value="1">
+                    </div>
+                </section>
+
+            </form>
+
+
+        </section>
+
+
+        <section>
+            <h3 class="other-red-ish">
+                <i class="fa fa-list"></i> Ingredients
+            </h3>
+
+            <div class="ingredients">
+
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 300 g brown rice</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 2 pc red onions</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 1 pc fresh red chilli</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 25 g unsalted butter</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 6 pc large free-range eggs</div>
+
+
+            </div>
+
+            <section class="gcontainer">
+
+
+                <div class="gobject">
+                    <input type="text" name="qty" placeholder="Qty.">
+                </div>
+                <div class="gobject" id="unit">
+
+                    <select name="text">
+                        <option value="value1" selected>Unit</option>
+                        <option value="value2">g</option>
+                        <option value="value3">Kg</option>
+                        <option value="value4">pc</option>
+                        <option value="value5">ml</option>
+                        <option value="value6">l</option>
+                        <option value="value7">tea spoon(s)</option>
+
+                    </select>
+                   
+                </div>
+                <div class="gobject of">of</div>
+                <div class="gobject" id="ingredient">
+                    
+                    <input type="text" name="ing" placeholder="Ingredient">
+                </div>
+
+                <div class="gobject">
+                    <button type="submit">
+                        <i class="fa fa-plus-square"></i>
+                    </button>
+                </div>
+            </section>
+
+
+
+        </section>
+
+        <section>
+            <h3 class="other-red-ish">
+                <i class="fa fa-list-ol"></i> Steps
+            </h3>
+
+            <div>
+
+                <ol>
+                    <li>
+                        Cook the rice in a pan of boiling salted water according to the packet instructions, then drain and refresh under cold water,
+                        leaving it in the colander.
+                    </li>
+                    <li>
+                        At the same time, poach the fish in a large pan of simmering salted water on a medium heat for 10 minutes,then carefully
+                        remove with a slotted spoon. Turn the heat up under the poaching water and bring back to a good simmer.
+
+                    </li>
+                    <li>
+                        Meahwhile, peel the onions and finely slice with the red chilli (deseed if you like) and coriander stalks. Peel and finely
+                        chop the garlic and ginger. Place it all in a large frying pan on a medium heat with 1 tablespoon
+                        of oil and the butter, and cook for 10 minutes, or until soft but not coloured, stirring occasionally.
+                    </li>
+                </ol>
+            </div>
+            <form>
+                <div>
+                    <label for="step-box"> Step</label><br>
+                    <textarea name="message" id="step-box" rows="10" cols="30" placeholder="Step description"></textarea>
+                </div>
+
+
+                <button type="submit" class="add-step">
+                    <i class="fa fa-plus-square"></i> Add step
+                </button>
+            </form>
+
+            
+
+        </section>
+       <footer>
+
+        <div class="flex_container">
+                <button class="flex_object" ><i class="fa fa-trash-o"></i> Cancel </button>
+                <button class="save-button flex_object"><i class="fa fa-floppy-o"></i> Save recipe</button>
+        </div>
+
+       </footer>
+
+    </main>
+
+</body>
